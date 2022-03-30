@@ -1,7 +1,9 @@
-<div>Teachable Machine Image Model</div>
-<button type="button" onclick="init()">Start</button>
-<div id="webcam-container"></div>
-<div id="label-container"></div>
+<div class="full-screen-div">
+    <div class="title-div">Teachable Machine Image Model</div>
+    <button type="button" onclick="init()">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 <script type="text/javascript">
@@ -57,3 +59,31 @@
         }
     }
 </script>
+<style>
+    * {
+        color: #FFEECA;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body, html {
+        background-image: linear-gradient(to right top, #5e4cb5, #5551b6, #4d56b6, #445ab5, #3d5eb4, #2b66b6, #176db5, #0073b4, #007db0, #0085a6, #008b98, #0b9088);
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .full-screen-div {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100%;
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+    }
+
+    .title-div {
+        text-align: center;
+        width: 100%;
+    }
+</style>
