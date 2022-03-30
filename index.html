@@ -1,6 +1,6 @@
 <div class="full-screen-div">
     <div class="title-div">Teachable Machine Image Model</div>
-    <button type="button" onclick="init()">Start</button>
+    <div class="knop"><button type="button" onclick="init()">Start</button><div>
     <div id="webcam-container"></div>
     <div id="label-container"></div>
 </div>
@@ -85,5 +85,34 @@
     .title-div {
         text-align: center;
         width: 100%;
+        font-size: 40px;
+    }
+    
+    knop {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    button {
+        width: 180px;
+        height: 60px;
+        margin: 5px 5px;
+        padding: 10px 10px;
+        font-size: 20px;
+        text-decoration: none;
+        background-color: #28C195;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .button:hover {
+        background-color: #3AAF8D;
+    }
+    
+    
+    
     }
 </style>
